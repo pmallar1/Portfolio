@@ -17,10 +17,6 @@
     background: #fff url('../img/preloader.gif') no-repeat center center;
 }
 
-
-
-
-
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
@@ -79,6 +75,7 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
+
 * Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
@@ -87,11 +84,13 @@ audio:not([controls]) {
 [hidden] {
 	display: none;
 }
+
 /* ==========================================================================Base========================================================================== */
 html {
 	font-size:100%;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
+	overflow-x: hidden;
 }
 html,html a {
 	-webkit-font-smoothing:antialiased;
@@ -103,6 +102,7 @@ html,button,input,select,textarea {
 body {
 	margin:0;
 	font-family: 'Open Sans',sans-serif;
+	overflow-x: hidden;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -457,7 +457,7 @@ table {
 	background: url('../img/Goodboy\ Photo\ Suit\ BW\ No\ BG.png') right bottom no-repeat;
 	background-size: contain;
 	padding:110px 0 100px 0;
-	height:auto;
+	height:100vh;
 	background-color: #FBFBFB;
 }
 .hero h1 {
@@ -487,6 +487,7 @@ table {
 	color:#5e5e5e;
 	font-size: 15px;
 }
+
 /* Boucing Arrow Animation */
 @keyframes arrowbounce {
 	from {
@@ -542,12 +543,13 @@ table {
 	color:#FFF;
 	text-decoration:none;
 	width:200px;
-	margin:0 auto;
+	margin:-100px auto;
 	border-bottom: none;
 }
 .scrollto--arrow {
 	padding:10px;
 }
+
 .scrollto--arrow img {
 	animation:arrowbounce 1s alternate infinite;
 	-moz-animation:arrowbounce 1s alternate infinite;
@@ -573,7 +575,7 @@ h1.arrow span {
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
-	height:420px;
+	height: 500px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -603,7 +605,12 @@ h1.arrow span {
   border-color: rgba(0, 0, 0, 0);
 }
 .about-text {
-	padding:20px 50px 25px 50px;
+	padding:40px;
+}
+
+.first-row {
+	height: 500px;
+	padding-top: 30px;
 }
 
 #second-row {
@@ -660,6 +667,43 @@ h1.arrow span {
 	transition:all .3s ease-out;
 	color:#fff;
 }
+
+.services img {
+	position:relative;
+	margin:0;
+	text-align:center;
+	line-height:180px;
+	font-size:56px;
+	color:#fff;
+	box-shadow:0 0 0 0 rgba(0,0,0,0.0);
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+}
+
+.services .item:hover .icon img {
+	background: transparent;
+	border: 0;
+}
+.services .item img [class*=fa] {
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+}
+.services .item:hover img [class*=fa] {
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	color:#fff;
+}
+
+#hk3 img {
+	right: 140px;
+}
+
+
+
+
 .features-wrapper {
 	margin:70px 0 0;
 }
@@ -790,9 +834,11 @@ img.grayscale:hover {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 }
+
 .overlay-effect .img i {
 	font-size:30px;
 }
+
 .overlay-effect .overlay {
 	bottom:0;
 	left:0;
@@ -883,11 +929,12 @@ img.grayscale:hover {
 .spacer-cta {
 	background-color: #FAC172;
 	padding:70px 0;
+	border-top: 1px solid #353535;
 }
 .outline-btn {
 	display:inline-block;
 	padding:25px 40px;
-	color: #353535;
+	color: white;
 	border: solid 1px #FAC172;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -911,6 +958,12 @@ img.grayscale:hover {
 	color:#424242;
 	border: solid 1px #424242;
 }
+
+/* ==========================================================================ABOUT ME========================================================================== */
+
+
+/* ==========================================================================ABOUT ME========================================================================== */
+
 /* ==========================================================================Team========================================================================== */
 .team img {
 	margin-bottom:20px;
@@ -1191,12 +1244,6 @@ ul.slides li {
 	}
 }
 
-
-
-
-
-
-
 /** Responsive fixes **/
 @media screen and (max-width:767px) {
 	.inner {
@@ -1207,7 +1254,6 @@ ul.slides li {
 	.hero h3 {
 	    letter-spacing: 10px;
 	}
-
 
 	.hero {
 	    padding-bottom: 0;
@@ -1237,7 +1283,6 @@ ul.slides li {
 		height: 100%;
 	}
 }
-
 
 @media screen and (max-width:991px) {
 	.hero {
