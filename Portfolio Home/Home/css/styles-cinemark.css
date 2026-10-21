@@ -1,0 +1,673 @@
+:root {
+	--max-width:1280px;
+}
+
+
+
+html {
+	background-color: var(--light-gray);
+	max-width: var(--max-width);
+	display: block;
+}
+
+main {
+	margin: 0 auto;
+	display: block;
+}
+
+main {
+	margin: 0 auto;
+}
+
+main, footer {
+	width: 100%;
+	padding: 16px;
+}
+
+html, body {
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/* ---------- NAV ---------- */
+
+header img {
+	display: block;
+	position: relative;
+	float: left;
+	padding: 16px;
+	text-align: left;
+	margin-bottom: -50px;
+}
+
+header h2 {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top: 16px;
+	text-align: left;
+	padding-left: 4px;
+	margin-bottom: -60px;
+}
+
+
+header h1 {
+	text-decoration: underline;
+}
+
+header h2 {
+	font-size: 20px;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-bottom: 70px;
+}
+
+#yearDisp h4 {
+	padding-bottom: 40px;
+}
+
+#login {
+	position: absolute;
+	top: 120px;
+}
+
+#login #userName {
+	width: 200px;
+	position: absolute;
+	float: right;
+	top: -78px;
+}
+
+#login #password {
+	width: 145px;
+	height: 15px;
+	position: absolute;
+	float: right;
+	top: -55px;
+}
+
+
+#login label {
+	width: 200px;
+	position: relative;
+	left: 1030px;
+	top: -90px;
+}
+
+#login button {
+	position: relative;
+	width: 100px;
+	height: 4px;
+	background-color: #2B2A2A;
+	left: 1180px;
+	top: -68px;
+	color: white !important;
+}
+
+#login input[type="text"] {
+	position: absolute;
+	border: 3px solid #DC2026;
+	left: 1120px;
+	top: -95px;
+	width: 145px;
+}
+
+#login input[type="password"] {
+	position: absolute;
+	border: 3px solid #DC2026;
+	left: 1120px;
+	top: -95px;
+}
+
+#login button {
+	padding-bottom: 20px;
+	padding-top: 5px;
+	top: -70px;
+}
+
+#welcome {
+	position: absolute;
+	right: 60px;
+	top: 90px;
+	font-weight: bold;
+}
+
+nav {
+	width: 100%;
+	padding: 0;
+	background-color: #2B2A2A;
+	margin: 0;
+	border-bottom: 3px solid #DC2026;
+	border-radius: 2px;
+}
+
+nav ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+nav a {
+	width: 100px;
+	display: block;
+	padding: 20px;
+	color: #DC2026;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.dark-mode-theme {
+	background-color: #2B2A2A;
+	color: #ffffff;
+}
+
+li #darkmode {
+	display: block;
+	position: relative;
+	top: -1px;
+	right: -290px;
+	color: #DC2026;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* -------------------- */
+
+
+/* ---------- slides ---------- */
+.slideshow {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.slide {
+	width: 100%;
+	position: relative;
+	display: none;
+}
+
+.slide img {
+	width: 1080px;
+	height: 620px;
+	margin: auto;
+	padding: auto;
+}
+
+/* ---------- slides ---------- */
+
+
+
+/* ---------- ACCORDION ---------- */
+#accordion {
+	display: block;
+	position: relative;
+	margin-top: -30px;
+}
+
+#accordion h2 {
+	background-color: inherit;
+	color: inherit;
+	border-color: #DC2026;
+	border: 3px solid #DC2026;
+}
+
+#accordion h5 {
+	text-align: center;
+}
+
+#accordion div {
+	overflow-x: hidden;
+	background-color: inherit;
+	color: inherit;
+	border-color: #DC2026;
+}
+
+/* ---------- ACCORDION ---------- */
+
+
+
+
+/* ---------- HEADINGS ---------- */
+h1,
+h2,
+h3,
+h4 {
+	text-align: center;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+h2 {
+	font-size: 1.65rem;
+	margin: 0.75rem;
+}
+
+h3 {
+	font-size: 1.45rem;
+	margin: 0.5rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+	margin: 0.35rem;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	max-width: 65ch;
+	padding: 1rem 0;
+	margin: 0 auto;
+}
+
+/* ---------- HEADINGS ---------- */
+
+
+
+
+/* ---------- INPUT/BUTTONS ---------- */
+button,
+input[type="submit"] {
+	display: block;
+	padding: 1rem;
+	background-color: var(--dark-gray);
+	color: var(--white);
+	border: none;
+
+}
+
+input[type="submit"] {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+input {
+	padding: 0.5rem 0.25rem;
+	margin: 0 auto 1rem auto;
+	width: calc(100% - 1rem);
+}
+
+/* ---------- INPUT/BUTTONS ---------- */
+
+
+
+#accordion h2 {
+	background-color: inherit;
+	color: inherit;
+	border-color: #DC2026;
+	border: 3px solid #DC2026;
+}
+
+#accordion div {
+	overflow-x: hidden;
+	background-color: inherit;
+	color: inherit;
+	border-color: #DC2026;
+}
+
+.newRel {
+	background-color: inherit;
+	margin-top: 40px;
+}
+
+.newRel h4 {
+	font-size: 2rem;
+}
+
+.newRel p {
+	padding: 0;
+	font-size: 1.2rem;
+	border-bottom: 3px solid #DC2026;
+	padding-bottom: 20px;
+	margin-bottom: -20px;
+}
+
+.newRel ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 1rem 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+	gap: 0.5rem;
+	max-width: 400px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: inherit;
+}
+
+.newRel a {
+	display: block;
+	padding: 1rem 0.5rem;
+	text-decoration: none;
+	color: var(--blue);
+	background-color: inherit;
+	font-size: 1.25rem;
+	font-weight: bold;
+	box-shadow: var(--spread-shadow);
+	border: 3px solid #DC2026;
+}
+
+#yearDisp {
+	border-bottom: 5px solid var(--med-blue);
+}
+
+#yearDisp h4,
+#searchLoad h4 {
+	font-size: 1.5rem;
+}
+
+#chosenYear,
+#popular {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 70px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#popular {
+	margin-left: -65px;
+}
+
+#chosenYear {
+	margin-left: -65px;
+	margin-bottom: 50px;
+}
+
+#popular p {
+	margin-left: 25px;
+}
+
+div h5 {
+	font-size: 1.35rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.vote {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	color: var(--dark-gray);
+	margin: 1rem 0 0 0;
+}
+
+.movie {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.movie h5 {
+	margin-top: -2rem;
+}
+
+.movie button {
+	width: 3rem;
+	height: 3rem;
+	display: block;
+	padding: 0.5rem;
+	position: relative;
+	top: -2.5rem;
+	left: 80%;
+	margin: 0;
+}
+
+button.arrow span {
+	margin: 0 auto;
+}
+
+.yrMovie {
+	display: block;
+	background-color: var(--med-blue);
+
+}
+
+.yrMovie h3 {
+	font-size: 1.55rem;
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+	letter-spacing: 0;
+}
+
+.yrMovie h5 {
+	text-align: center;
+}
+
+.arrow {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+	clip-path: polygon(10% 35%, 50% 55%, 90% 35%, 90% 50%, 50% 70%, 10% 50%);
+}
+
+.opened {
+	transform: rotate(-90deg);
+}
+
+#example img {
+	display: block;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#example form {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto 1.5rem auto;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	align-items: center;
+}
+
+#example label {
+	display: inline-block;
+	font-size: 1.2rem;
+	margin-right: 1rem;
+	margin-top: 0;
+	text-align: right;
+}
+
+#yearSubmit {
+	grid-column: 1/-1;
+	box-shadow: var(--spread-shadow);
+	font-size: 1.2rem;
+	padding: 1rem;	
+}
+
+#exampleFooter {
+	padding: 1rem;
+	border-top: 5px solid var(--med-blue);
+}
+
+#exampleFooter img {
+	width: 100%;
+	max-width: 300px;
+}
+
+.ui-widget input[type="number"] {
+	box-shadow: none;
+	font-family: Raleway, sans-serif;
+	padding-right: 1100px;
+	display: block;
+	position: relative;
+	align-content: center;
+	background-color: inherit;
+}
+
+.ui-widget.ui-widget-content {
+	border-color: var(--blue);
+	font-size: 1.45rem;
+	margin-top: 20px;
+	/* 	height: 45px; */
+}
+
+.spinnerDown,
+.spinnerUp {
+	background-color: var(--blue);
+	border-left: 1px solid var(--blue);
+}
+
+.ui-button .ui-button-icon {
+	background-image: none;
+	background-color: var(--white);
+	clip-path: polygon(50% 55%, 25% 30%, 75% 30%);
+}
+
+.ui-button .ui-icon-triangle-1-n {
+	clip-path: polygon(50% 45%, 25% 70%, 75% 70%);
+}
+
+a.ui-button:focus,
+a.ui-button:active,
+a.ui-button:hover {
+	background-image: none;
+	background-color: var(--med-blue);
+	color: var(--white);
+	border-left: 1px solid var(--blue);
+}
+
+.ui-button:hover .ui-icon {
+	background-image: none;
+}
+
+footer {
+	text-align: center;
+}
+
+.ui-widget.ui-widget-content {
+	border: 3px solid var(--light-gray);
+	font-size: 1rem;
+	font-family: Raleway, sans-serif;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	border: none;
+	background-color: var(--blue);
+	color: var(--white);
+	font-family: Raleway, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+.ui-widget-header {
+	border: none;
+	background: var(--white);
+}
+
+@media screen and (min-width: 500px) {
+	#example form {
+		grid-template-columns: 2fr 1fr 1.5fr;
+		gap: 0.5rem;
+		align-items: center;
+		max-width: 480px;
+	}
+
+	#example label {
+		margin: 0;
+	}
+
+	#yearSubmit {
+		grid-column: 3/4;
+		margin: 0 auto;
+		border: 3px solid #DC2026;
+	}
+}
+
+@media screen and (min-width: 560px) {
+	.newRel p {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 905px) {
+	.newRel h4 {
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	.newRel p {
+		font-size: 1.3rem;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+	#yearDisp h4,
+	#searchLoad h4 {
+		font-size: 2.25rem;
+	}
+}
+
+
+button:hover,
+.newRel li:hover,
+input[type=submit]:hover {
+	background-color: #eeeeee;
+}
+
+.sr-only {
+	position: absolute;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+main,
+footer,
+html,
+body {
+	width: 100%;
+	padding: 16px;
+	margin: 0 auto;
+}
+
+
+@media (hover: hover) {
+
+	nav a:hover,
+	button:hover,
+	input[type=submit]:hover {
+		box-shadow: -3px 3px 6px var(--med-gray);
+		color: var(--white);
+	}
+
+	a:hover {
+		color: var(--orange);
+	}
+
+	.newRel a:hover {
+		background-color: inherit;
+	}
+}
