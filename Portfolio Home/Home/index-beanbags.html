@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\styles-beanbags.css">
+	<title>Final</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>BEANBAGS</h1>
+		<h2>premium roasted coffee</h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="css\styles-beanbags.css" class="active-page">Home</a></li>
+			<li><a href="#" id="product">Products</a></li>
+			<li><a href="#" id="order">Order Now</a></li>
+			<li><a href="#" id="contact">Contact Us</a></li>
+			<li><button id="darkmode" onclick="toggleDarkMode()">darkmode</button></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="switcher1">
+			<img src="https://cdn.shopify.com/s/files/1/0297/3663/2365/files/favicon_1200x630.jpg?v=1613777858"
+				alt="600x400">
+			<h2>Beanbags | An Invitation for Adventure</h2>
+			<p>We aim to inspire you to start your adventure and achieve something beyond what is expected. We want to
+				provide you with stories, experiences and of course, good coffee wherever you go.</p>
+			<div id="switcher1Buttons">
+				<h2 class="sr-only">Click on a Button to View a Product</h2>
+				<button id="btn1">1</button>
+				<button id="btn2">2</button>
+				<button id="btn3">3</button>
+			</div>
+		</section>
+		<section id="switcher2">
+			<h2>Our Coffee</h2>
+			<section class="currentItem">
+				<h3>Reserve Light Roast</h3>
+				<img src="https://cdn.shopify.com/s/files/1/0297/3663/2365/products/DSC02666-3_400x.jpg?v=1636394921"
+					alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+				<p>"7 single serve specialty coffee-bags.<br><br>Tropical Fruit | Rosewater | Nougat<br><br>
+
+					Featured roaster:<br>
+					Bridge City Coffee<br><br>
+
+					Through their commitment to build value and hope in people, Bridge City works closely with their
+					roasters and partner farms to give you truly premium, great tasting coffee. This lightly roasted
+					coffee has natural fruity flavor notes and sweetness that eliminates any need for cream or sugar.
+					Designed to be smooth and versatile, the Honduras roast is a perfect pairing with beanbags!"</p>
+			</section>
+			<section id="switcher2Buttons">
+				<h2 class="sr-only">Click on a Button to View a Product</h2>
+				<button id="btn4">View Item 4</button>
+				<button id="btn5">View Item 5</button>
+				<button id="btn6">View Item 6</button>
+			</section>
+		</section>
+
+		<section id="contactForm">
+			<h1>Contact Us</h1>
+			<div class="container">
+				<form id="contact-form">
+				  <label for="first-name">First Name:</label>
+				  <input type="text" id="first-name" name="firstName" required>
+
+				  <label for="last-name">Last Name:</label>
+				  <input type="text" id="last-name" name="lastName" required>
+
+				  <label for="phone">Phone Number:</label>
+				  <input type="text" id="phone" name="phone" required>
+
+				  <label for="email">Email Address:</label>
+				  <input type="email" id="email" name="email" required>
+
+				  <label>Preferred Contact Method:</label>
+				  <input type="radio" id="contact-phone" name="contactMethod" value="phone" required>
+				  <label for="contact-phone">Phone</label>
+				  <input type="radio" id="contact-email" name="contactMethod" value="email" required>
+				  <label for="contact-email">Email</label>
+
+				  <label for="comments">Comments:</label>
+				  <textarea id="comments" name="comments" required></textarea>
+
+				  <input type="submit" value="Submit" class="submit-btn">
+				</form>
+
+				<div id="thank-you-message">
+				  <h3>Thank you for your submission!</h3>
+				  <p id="customer-details"></p>
+				</div>
+			  </div>
+
+		</section>;
+
+		<section id="cart1">
+			<h2>Don't Miss Out on These Hot Deals!</h2>
+			<section id="products1">
+				<h3 class="sr-only">Our Products</h3>
+				<section>
+					<img src="https://cdn.shopify.com/s/files/1/0297/3663/2365/products/Travelthermosbeanbagscoffee_540x.jpg?v=1644349285"
+						alt="12oz thermos">
+					<h4>Travel Thermos - 12oz</h4>
+					<p>$35.00</p>
+					<button id="pn1">Add To Cart</button>
+				</section>
+
+				<section>
+					<img src="https://cdn.shopify.com/s/files/1/0297/3663/2365/products/DSC02666-3_400x.jpg?v=1636394921"
+						alt="Light roast bag">
+					<h4>Reserve Light Roast</h4>
+					<p>$14.00</p>
+					<button id="pn2">Add To Cart</button>
+				</section>
+
+				<section>
+					<img src="https://cdn.shopify.com/s/files/1/0297/3663/2365/products/DSC02616_540x.jpg?v=1636398174"
+						alt="Medium roast bag">
+					<h4>Reserve Medium Roast</h4>
+					<p>$14.00</p>
+					<button id="pn3">Add To Cart</button>
+				</section>
+			</section>
+			<section id="totals1">
+				<h3>Cart</h3>
+				<ul id="itemsList1">
+					<li>Your Cart is Empty</li>
+				</ul>
+				<ul>
+					<li id="subtotal1">Subtotal: <span>$0.00</span></li>
+					<li id="tax1">Tax: <span>$0.00</span></li>
+					<li id="shipping1">Shipping: <span>$0.00</span></li>
+					<li id="total1">Total: <span>$0.00</span></li>
+				</ul>
+				<button id="checkout1">Checkout</button>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<p>For Educational Purposes Only</p>
+	</footer>
+
+	<script src="js\script-beanbags.js"></script>
+</body>
+
+</html>

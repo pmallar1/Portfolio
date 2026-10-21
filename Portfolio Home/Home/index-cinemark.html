@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\styles-cinemark.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<title>Final</title>
+</head>
+
+<body>
+
+	<header>
+		<img src="https://www.cinemark.com/images/cinemarkLogo.png" alt="slide 1"></div>
+		<h2><br><br>Every Movie Seat is The Best Seat.</h2>
+
+		<section id="login">
+			<label for="username">Username</label>
+			<input type="text" id="username"><br><br>
+
+			<label for="password">Password</label>
+			<input type="password" id="password">
+
+			<button id="loginSubmit">Submit</button>
+		</section>
+
+		<div id="welcome" hidden></div>
+	</header>
+
+	<nav>
+		<ul id="nav">
+			<li><a href="index-cinemark.html" class="active-page">Home</a></li>
+			<li><a href="#" id="product">Movies</a></li>
+			<li><a href="#" id="order">Theaters</a></li>
+			<li><a href="#" id="contact">Rewards</a></li>
+			<li><button id="darkmode" onclick="toggleDarkMode()">darkmode</button></li>
+		</ul>
+	</nav>
+
+	<main>
+
+		<div class="slideshow">
+			<div class="slide"><img
+					src="https://mms.businesswire.com/media/20190411005237/en/715685/5/CineMarkMcKinney08-1.jpg"
+					alt="slide 1">
+			</div>
+
+			<div class="slide"><img
+					src="https://www.robcon.com/wp-content/uploads/2023/01/Cinemark_Riverton_4-1800x1200.jpg"
+					alt="slide 2">
+			</div>
+
+			<div class="slide"><img
+					src="https://s.yimg.com/uu/api/res/1.2/iT9vW9DuyxvlnEPpmtr_1w--~B/Zmk9ZmlsbDtoPTYzMDtweW9mZj0wO3c9MTIwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-08/809fc690-2713-11ed-af6d-a7b98682beea.cf.jpg"
+					alt="slide 3">
+			</div>
+		</div>
+
+
+		<section class="newRel">
+			<h4>Newly Released</h4>
+			<p>View the current and previous movies we showcased</p>
+			<ul>
+				<li><a href="#trendingDisp">Trending Movies</a></li>
+				<li><a href="#yearDisp">Recent Showings</a></li>
+			</ul>
+		</section>
+
+		<section id="trendingDisp">
+			<h4>Trending Movies</h4>
+			<div id="popular"></div>
+		</section>
+
+		<section id="yearDisp">
+			<h4>View Recent Showings</h4>
+			<form>
+				<label for="pickYear">Enter a Year to Search: </label>
+				<input type="number" name="pickYear" id="pickYear" min="2000" max="2022" readonly>
+				<br><br><span class="message"></span><br><br>
+				<input type="submit" name="yearSubmit" id="yearSubmit">
+			</form><br><br>
+			<div id="chosenYear"></div>
+		</section>
+
+
+		<section id="accordion">
+			<h2>Seating</h2>
+			<div>
+				<img src="https://www.boxofficepro.com/wp-content/uploads/2019/04/Cinemark-Watchtung-XD-seats.jpg"
+					alt="600x400" height="630" width="1000">
+				<h5>PREMIUM SEATING, SIGHT &amp; SOUND TECHNOLOGY AT CINEMARK</h5>
+
+				<p>At Cinemark, we believe nothing compares to seeing movies the way they were truly intended—BIG. Every
+					visit to our theatre is a larger-than-life experience, delivered to you with the latest in sight,
+					sound and seating technology that puts you in the middle of all the action. Feel the vibrance of
+					every scene. Hear every sound effect with breathtaking clarity. Immersive yourself in a world that’s
+					unforgettably cinematic.</p>
+			</div>
+
+			<h2>Concessions</h2>
+
+			<div>
+				<img src="https://generic.wordpress.soton.ac.uk/cifr/wp-content/uploads/sites/232/2019/08/Fig-4-1024x681.jpg"
+					alt="coffee" height="630" width="1000">
+
+				<h5>SERVING UP THRILLS</h5>
+				<p>In the mood for something delicious to go with your movie? We’ve got you covered. Whether it’s a
+					snack attack or you have an appetite for more, our movie theater concession options are sure to hit
+					the spot. Classic movie snacks like fresh-popped popcorn and soft drinks. Bigger bites like pizza,
+					wings and burgers. Raise a glass to our tantalizing cocktail selection, including beer, wine,
+					margaritas—even handmade drinks. Plus, some locations have Starbucks so you can indulge in all your
+					coffee favorites. Check out all the ways movies &amp; food make for one show stopping combo at
+					Cinemark. </p>
+			</div>
+
+			<h2>Premium Membership</h2>
+			
+			<div>
+				<img src="https://www.pointruston.com/wp-content/uploads/2018/04/cinemark-movieclub-blog1.jpg"
+					alt="coffee" height="600" width="1000">
+				<h5>Cinemark Movie Club</h5>
+				<p>Movie Club is the paid monthly membership tier of Cinemark Movie Rewards.<br><br>
+				
+					In addition to the benefits available for Movie Fan members, Movie Club members get one ticket per
+				month that rolls over if unused and can be shared with friends or family, 20% off concessions every
+				visit, and waived online fees.<br><br>
+
+				Movie Club membership fees may vary by location.</p>
+			</div>
+		</section>
+
+	</main>
+	<script src="js\script-cinemark.js"></script>
+	
+</body>
+
+</html>
