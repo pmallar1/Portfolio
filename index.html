@@ -3,199 +3,535 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Patrick Mallari — Web Developer, Designer, Photographer</title>
-<meta name="description" content="Patrick Mallari is a full-stack web developer, graphic designer and photographer based in Los Angeles." />
+
+<title>Patrick Mallari — IT Administrator, Systems & Web</title>
+<meta name="description" content="Patrick Mallari is an IT Administrator and web developer in Southern California, specializing in technical support, systems administration, web development, and visual design." />
+
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Patrick Mallari — Web Developer, Designer, Photographer" />
-<meta property="og:description" content="Full-stack web developer, graphic designer and photographer based in Los Angeles." />
+<meta property="og:title" content="Patrick Mallari — IT & Digital Solutions" />
+<meta property="og:description" content="IT systems, technical support, web development, and design. Combining practical troubleshooting with a creative, user-focused approach." />
 <meta property="og:url" content="https://pmallar1.github.io/Portfolio/" />
 <meta property="og:image" content="https://pmallar1.github.io/Portfolio/img/Goodboy%20Photo%20Suit%20No%20Tie.png" />
 <meta property="og:image:alt" content="Portrait of Patrick Mallari" />
+
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Patrick Mallari — IT & Digital Solutions" />
+<meta name="twitter:description" content="IT administration, technical support, web development, and visual design." />
 <meta name="twitter:image" content="https://pmallar1.github.io/Portfolio/img/Goodboy%20Photo%20Suit%20No%20Tie.png" />
+
 <script>document.documentElement.classList.add('js')</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<div class="curtain" id="curtain" aria-hidden="true"><span>PM</span></div>
+<div class="curtain" id="curtain" aria-hidden="true">
+  <span>PM</span>
+</div>
+
 <div class="progress" id="progress"></div>
 
 <header id="siteHeader">
   <div class="wrap nav">
-    <a href="#home" class="brand"><i></i>Patrick Mallari</a>
+
+    <a href="#home" class="brand">
+      <i></i>Patrick Mallari
+    </a>
+
     <nav aria-label="Primary">
       <ul>
-        <li><a href="#work" class="nav-link">Work</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#photo" class="nav-link">Photography</a></li>
+        <li><a href="#work" class="nav-link">IT &amp; Work</a></li>
+        <li><a href="#skills" class="nav-link">Expertise</a></li>
+        <li><a href="#photo" class="nav-link">Design</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <div class="status"><i></i>Available for work</div>
+
+    <div class="status">
+      <i></i>Open to IT opportunities
+    </div>
+
   </div>
 </header>
 
 <main id="home">
 
+  <!-- HERO -->
   <div class="wrap hero">
-    <h1 aria-label="Web developer, designer and photographer in Los Angeles.">
-      <span class="ln" style="--i:0"><span>Web developer,</span></span>
-      <span class="ln" style="--i:1"><span>designer and</span></span>
-      <span class="ln" style="--i:2"><span>photographer</span></span>
-      <span class="ln muted" style="--i:3"><span>in Los Angeles.</span></span>
+
+    <h1 aria-label="IT systems, technical support, digital design, built around people.">
+      <span class="ln" style="--i:0"><span>IT systems.</span></span>
+      <span class="ln" style="--i:1"><span>Technical support.</span></span>
+      <span class="ln" style="--i:2"><span>Digital design.</span></span>
+      <span class="ln muted" style="--i:3"><span>Built around people.</span></span>
     </h1>
+
     <div class="hero-foot">
+
       <div class="lede fu" style="--d:0s">
-        <p>I build interfaces with the eye of a photographer: composition, light and hierarchy first, then the engineering to make it all work.</p>
-        <a href="#contact" class="btn" data-magnetic>Get in touch <span class="arr" aria-hidden="true">→</span></a>
+        <p>
+          I'm an IT Administrator who keeps systems running, solves
+          technical problems, and builds better digital experiences.
+          My background in web development and visual design brings
+          a user-focused perspective to both technology and creative work.
+        </p>
+
+        <a href="#work" class="btn" data-magnetic>
+          Explore my work
+          <span class="arr" aria-hidden="true">→</span>
+        </a>
       </div>
+
       <div class="meta fu" style="--d:.12s">
-        <div><span>Local time</span><span id="clock">—</span></div>
-        <div><span>Based in</span><span>Los Angeles, CA</span></div>
-        <div><span>Focus</span><span>Full-stack web</span></div>
-        <div><span>Experience</span><span>12+ years</span></div>
+        <div>
+          <span>Based in</span>
+          <span>Southern California</span>
+        </div>
+        <div>
+          <span>Primary focus</span>
+          <span>IT &amp; Systems</span>
+        </div>
+        <div>
+          <span>Also work in</span>
+          <span>Web &amp; Design</span>
+        </div>
+        <div>
+          <span>Current role</span>
+          <span>IT Administrator</span>
+        </div>
       </div>
+
     </div>
   </div>
 
+  <!-- SKILLS MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <div class="marquee-group"><span>Web development</span><i></i><span>Graphic design</span><i></i><span>Photography</span><i></i><span>Brand identity</span><i></i><span>Front end</span><i></i><span>Back end</span><i></i></div>
-      <div class="marquee-group"><span>Web development</span><i></i><span>Graphic design</span><i></i><span>Photography</span><i></i><span>Brand identity</span><i></i><span>Front end</span><i></i><span>Back end</span><i></i></div>
+
+      <div class="marquee-group">
+        <span>IT Administration</span><i></i>
+        <span>Technical Support</span><i></i>
+        <span>Systems &amp; Networking</span><i></i>
+        <span>Security &amp; Troubleshooting</span><i></i>
+        <span>Web Development</span><i></i>
+        <span>Graphic Design</span><i></i>
+      </div>
+
+      <div class="marquee-group">
+        <span>IT Administration</span><i></i>
+        <span>Technical Support</span><i></i>
+        <span>Systems &amp; Networking</span><i></i>
+        <span>Security &amp; Troubleshooting</span><i></i>
+        <span>Web Development</span><i></i>
+        <span>Graphic Design</span><i></i>
+      </div>
+
     </div>
   </div>
 
+  <!-- INTRO -->
   <section id="intro">
     <div class="wrap">
+
       <div class="sec-head" style="margin-bottom:0">
-        <span class="label reveal">Intro</span>
-        <p class="intro split">I'm a web architect who turns ideas into online experiences, pairing innovation with usability so your presence <em>captivates and converts.</em></p>
+        <span class="label reveal">My approach</span>
+
+        <p class="intro split">
+          Technology should work reliably, make sense to the people
+          using it, and look good when the experience calls for it.
+          I bring together <em>IT operations, technical problem-solving,
+          and a designer's eye</em> to make that happen.
+        </p>
       </div>
+
     </div>
   </section>
 
+  <!-- PROFESSIONAL EXPERIENCE AND SELECTED WORK -->
   <section id="work" class="dark">
     <div class="wrap">
+
       <div class="sec-head">
-        <span class="label reveal">Selected work</span>
-        <h2 class="split">Three redesigns, three different problems.</h2>
+        <span class="label reveal">Professional experience</span>
+        <h2 class="split">
+          Keeping systems running. Making technology work.
+        </h2>
       </div>
+
+      <div class="it-grid reveal">
+
+        <article class="it-card">
+          <span class="label">01 / IT OPERATIONS</span>
+
+          <h3>IT Administration</h3>
+
+          <p class="role">
+            <strong>Dawson Company</strong>
+            <span>IT Administrator · September 2024–Present</span>
+          </p>
+
+          <p>
+            Supporting business technology across multiple locations,
+            deploying computers, managing user accounts and permissions,
+            troubleshooting hardware and software, and maintaining
+            reliable day-to-day IT operations.
+          </p>
+
+          <div class="tech-list">
+            <span>End-user support</span>
+            <span>Computer deployments</span>
+            <span>Active Directory</span>
+            <span>Documentation</span>
+          </div>
+        </article>
+
+        <article class="it-card">
+          <span class="label">02 / SYSTEMS</span>
+
+          <h3>Systems &amp; Network Support</h3>
+
+          <p>
+            Troubleshooting access, connectivity, hardware, software,
+            and communications issues to help employees stay productive
+            and restore service when problems occur.
+          </p>
+
+          <div class="tech-list">
+            <span>Group Policy</span>
+            <span>SonicWall</span>
+            <span>VPN</span>
+            <span>VoIP</span>
+            <span>Remote support</span>
+          </div>
+        </article>
+
+        <article class="it-card">
+          <span class="label">03 / DEPLOYMENT</span>
+
+          <h3>Endpoint &amp; Software Management</h3>
+
+          <p>
+            Coordinating computer deployments, software installations,
+            update rollouts, Windows readiness checks, and troubleshooting
+            across supported business locations.
+          </p>
+
+          <div class="tech-list">
+            <span>Windows</span>
+            <span>Software updates</span>
+            <span>PC troubleshooting</span>
+            <span>Remote assistance</span>
+          </div>
+        </article>
+
+        <article class="it-card">
+          <span class="label">04 / PROCESS IMPROVEMENT</span>
+
+          <h3>Documentation &amp; IT Procedures</h3>
+
+          <p>
+            Creating internal documentation and standard operating
+            procedures to make troubleshooting more consistent, improve
+            knowledge sharing, and simplify recurring IT tasks.
+          </p>
+
+          <div class="tech-list">
+            <span>SOP creation</span>
+            <span>Knowledge sharing</span>
+            <span>Process improvement</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- WEB DEVELOPMENT PROJECTS -->
+      <div class="sec-head" style="margin-top:clamp(72px,10vw,120px)">
+        <span class="label reveal">Development &amp; design</span>
+        <h2 class="split">
+          Digital experiences, built with intention.
+        </h2>
+      </div>
+
       <div class="rows reveal" id="rows">
-        <a class="row" data-i="0" href="https://pmallar1.github.io/Portfolio/index-wok.html" target="_blank" rel="noopener">
+
+        <a class="row" data-i="0"
+           href="https://pmallar1.github.io/Portfolio/index-wok.html"
+           target="_blank" rel="noopener">
           <span class="label">01</span>
           <h3>Wok Asian Cuisine</h3>
           <span class="cat">Restaurant · New build</span>
-          <p>A modern, minimal three-page site (home, menu, contact) for a Japanese fusion restaurant, built around Chef Ly's photos and menu.</p>
+          <p>
+            A modern, minimal three-page site for a Japanese fusion
+            restaurant, built around Chef Ly's photography and menu.
+          </p>
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="row" data-i="1" href="https://pmallar1.github.io/Portfolio/index-cinemark.html" target="_blank" rel="noopener">
+
+        <a class="row" data-i="1"
+           href="https://pmallar1.github.io/Portfolio/index-cinemark.html"
+           target="_blank" rel="noopener">
           <span class="label">02</span>
           <h3>Cinemark Redesign</h3>
           <span class="cat">Theater chain · UI refresh</span>
-          <p>A concept layering JS-driven animation and transitions onto an already solid site, plus accounts that track new releases with descriptions and IMDB ratings.</p>
+          <p>
+            A concept redesign featuring JavaScript-driven animations,
+            transitions, and an account experience for tracking new
+            releases with descriptions and IMDb ratings.
+          </p>
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="row" data-i="2" href="https://pmallar1.github.io/Portfolio/index-beanbags.html" target="_blank" rel="noopener">
+
+        <a class="row" data-i="2"
+           href="https://pmallar1.github.io/Portfolio/index-beanbags.html"
+           target="_blank" rel="noopener">
           <span class="label">03</span>
           <h3>Beanbags Coffee</h3>
           <span class="cat">Coffee brand · Motion pass</span>
-          <p>A refreshed online presence using the brand's existing photography and copy, with prototyped animation and transitions to give the site more life.</p>
+          <p>
+            A refreshed online presence using the brand's existing
+            photography and copy, with prototyped animations and
+            transitions to give the experience more life.
+          </p>
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
+
       </div>
+
     </div>
   </section>
 
+  <!-- EXPERTISE -->
   <section id="skills">
     <div class="wrap">
+
       <div class="sec-head">
-        <span class="label reveal">What I do</span>
-        <h2 class="split">Three disciplines, one practice.</h2>
+        <span class="label reveal">Expertise</span>
+        <h2 class="split">
+          Technical thinking. Creative perspective.
+        </h2>
       </div>
+
       <div class="panels reveal" id="panels">
+
         <div class="panel active" tabindex="0" role="button" aria-expanded="true">
-          <span class="label">01</span><span class="plus" aria-hidden="true">+</span>
+          <span class="label">01</span>
+          <span class="plus" aria-hidden="true">+</span>
           <div>
-            <h3>Web development</h3>
-            <p>Hands-on fluency in modern languages and frameworks, front end to back end, shipped as interfaces that feel seamless.</p>
+            <h3>IT Administration &amp; Support</h3>
+            <p>
+              End-user support, computer deployments, Active Directory,
+              Group Policy, Windows troubleshooting, remote assistance,
+              user access, software updates, and technical documentation.
+            </p>
           </div>
         </div>
+
         <div class="panel" tabindex="0" role="button" aria-expanded="false">
-          <span class="label">02</span><span class="plus" aria-hidden="true">+</span>
+          <span class="label">02</span>
+          <span class="plus" aria-hidden="true">+</span>
           <div>
-            <h3>Graphic design</h3>
-            <p>Twelve years turning ideas into visual stories, shaping brands and imagery with photography as a constant influence.</p>
+            <h3>Systems &amp; Infrastructure</h3>
+            <p>
+              Practical experience supporting VPN connectivity,
+              firewall policies, VoIP systems, printers, endpoint
+              software, network troubleshooting, and multi-location
+              IT operations.
+            </p>
           </div>
         </div>
+
         <div class="panel" tabindex="0" role="button" aria-expanded="false">
-          <span class="label">03</span><span class="plus" aria-hidden="true">+</span>
+          <span class="label">03</span>
+          <span class="plus" aria-hidden="true">+</span>
           <div>
-            <h3>Photography</h3>
-            <p>Years behind the lens shaped my sense of composition, light and hierarchy, which carries into every layout I design.</p>
+            <h3>Web Development</h3>
+            <p>
+              WordPress, Shopify, HTML, CSS, JavaScript, responsive
+              interfaces, content management, SEO, and website
+              improvements focused on usability and business needs.
+            </p>
           </div>
         </div>
+
+        <div class="panel" tabindex="0" role="button" aria-expanded="false">
+          <span class="label">04</span>
+          <span class="plus" aria-hidden="true">+</span>
+          <div>
+            <h3>Graphic Design &amp; Photography</h3>
+            <p>
+              A visual design background spanning composition,
+              branding, photography, and visual storytelling,
+              bringing clarity and attention to detail to digital
+              experiences.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- PHOTOGRAPHY AND DESIGN -->
   <section id="photo" style="padding-top:0">
     <div class="wrap">
+
       <div class="sec-head">
-        <span class="label reveal">Photography &amp; design</span>
-        <h2 class="split">Event coverage and visual identity.</h2>
+        <span class="label reveal">Photography &amp; visual design</span>
+        <h2 class="split">
+          A creative practice beyond IT.
+        </h2>
       </div>
+
       <div class="gallery reveal">
-        <figure class="shot g1" tabindex="0" role="button" aria-label="Open photo 1"><img loading="lazy" src="img\HK1.jpg" alt="Hello Kitty and Friends DJ event, wide crowd shot"><span class="pill">View ↗</span></figure>
-        <figure class="shot g2" tabindex="0" role="button" aria-label="Open photo 2"><img loading="lazy" src="img\HK2.jpg" alt="Hello Kitty and Friends DJ event, stage lighting"><span class="pill">View ↗</span></figure>
-        <figure class="shot g3" tabindex="0" role="button" aria-label="Open photo 3"><img loading="lazy" src="img\HK3.jpg" alt="Hello Kitty and Friends DJ event, detail shot"><span class="pill">View ↗</span></figure>
+
+        <figure class="shot g1" tabindex="0" role="button" aria-label="Open photo 1">
+          <img loading="lazy" src="https://pmallar1.github.io/Portfolio/img/HK1.jpg"
+               alt="Hello Kitty and Friends DJ event, wide crowd shot">
+          <span class="pill">View ↗</span>
+        </figure>
+
+        <figure class="shot g2" tabindex="0" role="button" aria-label="Open photo 2">
+          <img loading="lazy" src="https://pmallar1.github.io/Portfolio/img/HK2.jpg"
+               alt="Hello Kitty and Friends DJ event, stage lighting">
+          <span class="pill">View ↗</span>
+        </figure>
+
+        <figure class="shot g3" tabindex="0" role="button" aria-label="Open photo 3">
+          <img loading="lazy" src="https://pmallar1.github.io/Portfolio/img/HK3.jpg"
+               alt="Hello Kitty and Friends DJ event, detail shot">
+          <span class="pill">View ↗</span>
+        </figure>
+
       </div>
-      <div class="caption reveal"><span>Hello Kitty &amp; Friends, DJ event</span><span>Los Angeles, CA</span></div>
+
+      <div class="caption reveal">
+        <span>Hello Kitty &amp; Friends, DJ event</span>
+        <span>Los Angeles, CA</span>
+      </div>
+
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" style="padding-top:0">
     <div class="wrap">
+
       <div class="sec-head">
         <span class="label reveal">About</span>
-        <h2 class="split">Computer science background, designer's instincts.</h2>
+        <h2 class="split">
+          Technical problem-solver. Creative thinker.
+        </h2>
       </div>
+
       <div class="about">
-        <div class="portrait reveal"><img loading="lazy" src="https://pmallar1.github.io/Portfolio/img/Goodboy%20Photo%20Suit%20No%20Tie.png" alt="Portrait of Patrick Mallari"></div>
+
+        <div class="portrait reveal">
+          <img loading="lazy"
+               src="https://pmallar1.github.io/Portfolio/img/Goodboy%20Photo%20Suit%20No%20Tie.png"
+               alt="Portrait of Patrick Mallari">
+        </div>
+
         <div class="about-text reveal">
-          <p>Patrick Mallari is a full-stack web developer based in Los Angeles, with a solid computer science foundation and a passion for the web across both front-end and back-end technologies.</p>
-          <p>He earned a Bachelor's degree in Graphic Information Technology, focused on full-stack web development, from Arizona State University. Since then his work has spanned e-commerce platforms to content management systems, always aiming for seamless experiences and robust functionality.</p>
-          <p>Outside of code, Patrick hikes, builds games and plays them, and pulls inspiration from all of it into what he ships.</p>
+
+          <p>
+            I'm Patrick Mallari, an IT Administrator based in Southern
+            California. My work centers on supporting the technology
+            people depend on every day, from troubleshooting user issues
+            and deploying computers to maintaining access, connectivity,
+            and reliable business systems.
+          </p>
+
+          <p>
+            I support IT operations across multiple locations and work
+            with technologies including Active Directory, Group Policy,
+            SonicWall, VPNs, VoIP, and remote support tools. I also create
+            documentation and improve processes to make recurring tasks
+            more consistent and manageable.
+          </p>
+
+          <p>
+            My background extends beyond IT. I earned a bachelor's
+            degree in Graphic Information Technology, focused on
+            Full Stack Web Development, from Arizona State University.
+            My experience in web development, graphic design, and
+            photography gives me another way to approach problems:
+            consider the technical requirements while keeping the
+            user experience in mind.
+          </p>
+
+          <p>
+            I'm interested in continuing to grow in IT, taking on more
+            responsibility, and combining technical and creative skills
+            to improve how people work with technology.
+          </p>
+
           <div class="stats">
-            <div><strong><span data-count="12" data-suffix="+" style="font-size:inherit;color:inherit">12+</span></strong><span>Years in photography &amp; design</span></div>
-            <div><strong><span data-count="3" style="font-size:inherit;color:inherit">3</span></strong><span>Disciplines, one practice</span></div>
-            <div><strong>ASU</strong><span>Graphic Information Technology</span></div>
+            <div>
+              <strong>IT</strong>
+              <span>Administration &amp; support</span>
+            </div>
+            <div>
+              <strong>Web</strong>
+              <span>Development &amp; digital experiences</span>
+            </div>
+            <div>
+              <strong>ASU</strong>
+              <span>Graphic Information Technology</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="dark">
     <div class="wrap contact">
+
       <div class="sec-head">
         <span class="label reveal">Contact</span>
-        <h2 class="split">Let's build something together.</h2>
+        <h2 class="split">
+          Let's solve something together.
+        </h2>
       </div>
-      <p class="contact-big reveal"><a href="mailto:patrickamallari@gmail.com">patrickamallari@gmail.com</a></p>
+
+      <p class="contact-big reveal">
+        <a href="mailto:patrickamallari@gmail.com">patrickamallari@gmail.com</a>
+      </p>
+
       <div class="btn-row reveal">
-        <a class="btn light" href="mailto:patrickamallari@gmail.com" data-magnetic>Send a message <span class="arr" aria-hidden="true">→</span></a>
-        <button class="btn ghost" id="copyBtn" type="button" data-magnetic>Copy email</button>
+        <a class="btn light" href="mailto:patrickamallari@gmail.com" data-magnetic>
+          Send a message
+          <span class="arr" aria-hidden="true">→</span>
+        </a>
+        <button class="btn ghost" id="copyBtn" type="button" data-magnetic>
+          Copy email
+        </button>
       </div>
+
       <div class="links reveal">
-        <a href="https://www.instagram.com/pat.racks/" target="_blank" rel="noopener"><span class="label">Photography</span>@pat.racks ↗</a>
-        <a href="https://www.linkedin.com/in/patrick-angelo-mallari" target="_blank" rel="noopener"><span class="label">LinkedIn</span>patrick-angelo-mallari ↗</a>
-        <a href="https://www.behance.net/patrickmallari3" target="_blank" rel="noopener"><span class="label">Behance</span>patrickmallari3 ↗</a>
-        <a href="https://github.com/patmallari" target="_blank" rel="noopener"><span class="label">GitHub</span>patmallari ↗</a>
+        <a href="https://www.instagram.com/pat.racks/" target="_blank" rel="noopener">
+          <span class="label">Photography</span>
+          @pat.racks ↗
+        </a>
+        <a href="https://www.linkedin.com/in/patrick-angelo-mallari" target="_blank" rel="noopener">
+          <span class="label">LinkedIn</span>
+          patrick-angelo-mallari ↗
+        </a>
+        <a href="https://www.behance.net/patrickmallari3" target="_blank" rel="noopener">
+          <span class="label">Behance</span>
+          patrickmallari3 ↗
+        </a>
+        <a href="https://github.com/patmallari" target="_blank" rel="noopener">
+          <span class="label">GitHub</span>
+          patmallari ↗
+        </a>
       </div>
     </div>
   </section>
